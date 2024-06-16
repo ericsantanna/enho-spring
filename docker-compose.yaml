@@ -1,0 +1,11 @@
+services:
+  app:
+    image: node:18-alpine
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - 127.0.0.1:3000:3000
+  app-2:
+    image: node:18-alpine
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - 127.0.0.1:3000:3000
